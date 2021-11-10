@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'OptimaLT-ExtraBlack';
+    src: url('../fonts/OptimaLT-ExtraBlack.eot');
+    src: url('../fonts/OptimaLT-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OptimaLT-ExtraBlack.woff2') format('woff2'),
+        url('../fonts/OptimaLT-ExtraBlack.woff') format('woff'),
+        url('../fonts/OptimaLT-ExtraBlack.ttf') format('truetype'),
+        url('../fonts/OptimaLT-ExtraBlack.svg#OptimaLT-ExtraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SusaLight';
+    src: url('../fonts/SusaLight.eot');
+    src: url('../fonts/SusaLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SusaLight.woff2') format('woff2'),
+        url('../fonts/SusaLight.woff') format('woff'),
+        url('../fonts/SusaLight.ttf') format('truetype'),
+        url('../fonts/SusaLight.svg#SusaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
