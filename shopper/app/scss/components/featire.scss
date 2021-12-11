@@ -1,7 +1,7 @@
 @use '../util' as *;
 
 .swiper {
-    box-shadow: 0 rem(12) rem(68) var(--text);
+    box-shadow: 0 rem(12) rem(68) var(--gray-dark);
     padding: rem(30) rem(70) rem(45);
     background-color: #fff;
     border-radius: rem(5);
@@ -11,6 +11,7 @@
 
     &-slide {
         text-align: center;
+        transition: color .2s ease-in-out;
 
         img {
             max-width: 100%;
@@ -19,8 +20,9 @@
 
     &-button-prev,
     &-button-next {
-        max-width: rem(12);
-        max-height: rem(20);
+        top: rem(22);
+        width: rem(70);
+        height: 100%;
 
         &::after {
             content: '';
@@ -28,12 +30,12 @@
     }
 
     &-button-prev {
-        left: rem(30);
-        background-image: url('../images/arrow-left.svg');
+        left: 0;
+        background: url('../images/arrow-left.svg') no-repeat 50%;
     }
 
     &-button-next {
-        right: rem(30);
-        background-image: url('../images/arrow-right.svg');
+        right: 0;
+        background: url('../images/arrow-right.svg') no-repeat 50%;
     }
 }

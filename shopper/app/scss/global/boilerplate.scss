@@ -3,6 +3,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -16,14 +17,38 @@ p,
 body {
     margin: 0;
     padding: 0;
-    color: var(--text);
+    color: var(--gray-dark);
     font-family: 'Lato', sans-serif;
-    transition: all .2s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 
 input {
     background-color: transparent;
     padding: rem(10) rem(15);
+}
+
+img {
+    border-radius: rem(5) rem(5) 0 0;
+}
+
+.item {
+    text-align: center;
+    border-radius: rem(5);
+    border: rem(1) solid var(--gray);
+
+    &__title {
+        font-size: rem(14);
+        color: var(--black);
+        margin: rem(8) 0;
+
+        &--lg {
+            font-size: rem(16);
+        }
+    
+        img {
+            float: right;
+        }
+    }
 }
 
 .logo {
@@ -34,7 +59,7 @@ input {
     float: left;
     min-width: 100%;
     border-radius: rem(5);
-    border: rem(1) solid var(--gray-dark);
+    border: rem(1) solid var(--gray);
 
     &--sm {
         min-width: rem(325);
@@ -50,21 +75,38 @@ input {
     transition: all .2s ease-in-out;
     padding: rem(10) rem(30);
     border-radius: rem(5);
+    position: relative;
 
     &:hover {
+        color: var(--white);
         border-color: darken(hsl(88, 50%, 53%), 10%);
         background-color: darken(hsl(88, 50%, 53%), 10%);
     }
 
-    &--transparent {
-        color: var(--text);
-        border-color: var(--text);
+    &__transparent {
+        color: var(--gray-dark);
+        border-color: var(--gray-dark);
         background-color: transparent;
 
         &:hover {
-            border-color: unset;
             background-color: unset;
         }
+    }
+
+    &--alert::after {
+        content: '9+';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: rem(12);
+        min-width: rem(25);
+        min-height: rem(25);
+        color: var(--white);
+        background-color: var(--brand);
+        position: absolute;
+        top: rem(-10);
+        right: rem(-10);
     }
 
     &--sm {
@@ -76,10 +118,4 @@ input {
         font-size: rem(16);
         padding: rem(15) rem(50);
     }
-}
-
-.title {
-    font-weight: 400;
-    font-size: rem(30);
-    color: var(--brand);
 }
