@@ -1,0 +1,56 @@
+@use '../util' as *;
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+
+    &__info {
+        max-width: rem(510);
+
+        .btn {
+            padding-left: rem(45);
+    
+            svg {
+                transition: var(--transition) ease-in-out;
+                position: absolute;
+                fill: var(--white);
+                top: rem(12);
+                left: rem(20);
+            }
+
+            &--transparent:hover svg {
+                fill: var(--blue);
+            }
+        }
+    }
+
+    &__title {
+        font-size: rem(50);
+        margin-bottom: rem(28);
+    }
+
+    &__price {
+        font-size: rem(24);
+        color: var(--blue);
+    }
+
+    &__price,
+    .subtitle {
+        margin-bottom: rem(25);
+    }
+
+    .subtitle {
+        color: var(--grey);
+    }
+
+    .text {
+        margin-bottom: rem(20);
+    }
+
+    img {
+        padding: rem(22) 0 rem(58);
+        max-width: 50%;
+    }
+}

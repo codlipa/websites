@@ -1,0 +1,45 @@
+@use '../util' as *;
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: rem(14);
+	color: var(--text);
+	background-color: var(--background);
+	font-family: 'SVN-Gilroy Light', sans-serif;
+}
+
+.btn {
+	color: var(--white);
+	border-radius: rem(4);
+	padding: rem(10) rem(18);
+	text-transform: uppercase;
+	background-color: var(--blue);
+	border: rem(1) solid transparent;
+	position: relative;
+
+	&--transparent {
+		border-color: var(--white);
+		background-color: transparent;
+
+		&:hover {
+			border-color: var(--blue);
+			color: var(--blue);
+		}
+	}
+
+	& + & {
+		margin-left: rem(16);
+	}
+}

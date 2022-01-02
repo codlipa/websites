@@ -1,0 +1,42 @@
+@use '../util' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    min-height: rem(100);
+
+    &__nav a {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: rem(60);
+            padding: rem(40) 0;
+
+            &::after {
+                content: '';
+                min-width: 100%;
+                min-height: rem(4);
+                transition: var(--transition) ease-in-out;
+                background-color: transparent;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        &:hover {
+            color: var(--blue);
+
+            &::after {
+                background-color: var(--blue);
+            }
+        }
+
+        &.btn {
+            padding-right: rem(34);
+            padding-left: rem(34);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@font-face {
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+	font-family: 'SVN-Gilroy Light';
+	src: url('../app/fonts/svngilroy-light.woff2');
+}
+
+@font-face {
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+	font-family: 'SVN-Gilroy Bold';
+	src: url('../app/fonts/svngilroy-bold.woff2');
+}
+
+:root {
+	--font-body: 'SVN-Gilroy Light';
+	--font-title: 'SVN-Gilroy Bold';
+	--transition: .2s;
+}
