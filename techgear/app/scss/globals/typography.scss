@@ -5,7 +5,7 @@ h2,
 h3 {
 	margin-top: 0;
 	line-height: 1.1;
-	--font-title: 'SVN-Gilroy Bold';
+	font-family: var(--font-title);
 }
 
 p {
@@ -17,9 +17,54 @@ a:visited,
 a:active {
 	transition: var(--transition) ease-in-out;
 	text-decoration: none;
-	color: var(--grey);
+	color: var(--white);
 }
 
-.subtitle {
-	font-size: rem(28);
+a.link {
+	color: var(--blue);
+
+	&::after {
+		content: '→';
+		min-width: rem(24);
+		min-height: rem(24);
+		padding-left: rem(10);
+	}
+}
+
+.title {
+
+	&--lg {
+        font-size: rem(50);
+        margin-bottom: rem(28);
+	}
+
+	&--md {
+		font-size: rem(28);
+		color: var(--white);
+		margin-bottom: rem(15);
+		position: relative;
+
+		&::before {
+			text-transform: uppercase;
+			position: absolute;
+			top: rem(-60);
+			left: 50%;
+			transform: translateX(-50%);
+			font-family: var(--font-title);
+			font-size: rem(80);
+			color: var(--blue);
+			opacity: .15;
+		}
+	}
+
+	&--sm {
+		font-size: rem(24);
+		color: var(--white);
+		margin-bottom: rem(12);
+	}
+}
+
+.text {
+	color: var(--white);
+	margin-bottom: rem(20);
 }

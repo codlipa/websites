@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.products {
+    text-align: center;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        margin-top: rem(130);
+        justify-content: space-between;
+    }
+
+    &__item {
+        min-width: rem(360);
+        max-height: rem(260);
+        background-color: var(--card);
+        border-radius: rem(20);
+
+        img {
+            top: rem(-90);
+        }
+    }
+
+    &__title, img {
+        position: relative;
+    }
+
+    &__title {
+        font-size: rem(20);
+        color: var(--white);
+		font-family: var(--font-title);
+        top: rem(-110);
+    }
+
+    .title--md::before {
+		content: 'Products';
+    }
+}

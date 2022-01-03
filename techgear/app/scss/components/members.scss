@@ -1,0 +1,51 @@
+@use '../util' as *;
+
+.members {
+    text-align: center;
+
+    &__slider {
+        position: relative;
+    }
+
+    .swiper {
+        // TODO: Del m-b rem(130)
+        margin: rem(60) 0 rem(130);
+        position: unset;
+
+        &-slide {
+            background-color: var(--card);
+            border-radius: rem(20);
+            min-width: rem(230);
+            padding-top: rem(20);
+        }
+
+        &-button-prev,
+        &-button-next {
+            color: var(--white);
+            border-radius: rem(4);
+            padding: rem(14) rem(22);
+            background-color: var(--blue);
+
+            &::after {
+                font-size: rem(18);
+                font-weight: 700;
+            }
+        }
+
+        &-button-prev {
+            left: rem(-20);
+        }
+
+        &-button-next {
+            right: rem(-20);
+        }
+    }
+
+    .title--md::before {
+        content: 'Members';
+    }
+
+    .text {
+        margin-top: rem(20);
+    }
+}
