@@ -1,0 +1,35 @@
+@use '../util' as *;
+
+.footer {
+	margin-top: rem(200);
+    color: var(--white);
+    background-color: var(--footer);
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: rem(55) 0 rem(38);
+    }
+
+    &__item {
+
+        h4 {
+            margin-bottom: rem(30);
+            text-transform: uppercase;
+        }
+
+        a {
+            line-height: 3;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .info {
+        padding: rem(30) 0;
+        text-transform: uppercase;
+        border-top: rem(1) solid var(--white);
+    }
+}

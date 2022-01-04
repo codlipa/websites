@@ -8,8 +8,7 @@
     }
 
     .swiper {
-        // TODO: Del m-b rem(130)
-        margin: rem(60) 0 rem(130);
+        margin-bottom: rem(60);
         position: unset;
 
         &-slide {
