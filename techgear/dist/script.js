@@ -1,0 +1,2 @@
+"use strict";var swiper=new Swiper(".swiper",{slidesPerView:4,spaceBetween:20,keyboard:{enabled:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+//# sourceMappingURL=script.js.map
