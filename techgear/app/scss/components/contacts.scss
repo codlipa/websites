@@ -2,11 +2,13 @@
 
 .contacts {
 
-    &__content {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
-        > *:not(.logo) {
-            margin-top: rem(40);
-        }
+    &__content > *:not(.logo) {
+        margin-top: rem(40);
     }
 
     &__direct,
@@ -17,44 +19,77 @@
         }
     }
 
-    &__direct {
+    &__direct a {
+        display: block;
+        padding-left: rem(32);
+        position: relative;
 
-        a {
-            display: block;
-            padding-left: rem(32);
-            position: relative;
+        &::before {
+            content: '';
+            min-width: rem(24);
+            min-height: rem(24);
+            display: inline-block;
+            position: absolute;
+            left: 0;
+        }
 
-            &::before {
-                content: '';
-                min-width: rem(24);
-                min-height: rem(24);
-                display: inline-block;
-                position: absolute;
-                left: 0;
-            }
+        &:nth-child(2)::before {
+            background-image: url('../images/tools/phone.svg');
+        }
 
-            &:nth-child(2)::before {
-                background-image: url('../images/tools/phone.svg');
-            }
+        &:nth-child(3)::before {
+            background-image: url('../images/tools/mail.svg');
+        }
 
-            &:nth-child(3)::before {
-                background-image: url('../images/tools/mail.svg');
-            }
-
-            &:hover {
-                text-decoration: underline;
-            }
+        &:hover {
+            text-decoration: underline;
         }
     }
 
-    &__social {
+    &__social a:not(:last-child) {
+        margin-right: rem(20);
+    }
 
-        a:not(:last-child) {
-            margin-right: rem(20);
+    &__form {
+        min-width: rem(720);
+
+        div {
+            display: flex;
+
+            *:not(:last-child) {
+                margin-right: rem(20);
+            }
         }
     }
 
     .title--md::before {
         content: 'Contacts';
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        max-width: rem(320);
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: none;
+        color: var(--white);
+        border-radius: rem(4);
+        margin-bottom: rem(20);
+        padding: rem(15) rem(20);
+        background-color: var(--card);
+    }
+
+    [required]::-webkit-input-placeholder {
+        color: var(--star);
+    }
+
+    textarea {
+        margin-bottom: rem(32);
+        padding-bottom: rem(122);
     }
 }

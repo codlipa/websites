@@ -23,9 +23,14 @@ body {
 
 .info {
     text-align: center;
+
+	&:not(:last-child) {
+		margin-bottom: rem(60);
+	}
 }
 
 .btn {
+	font-weight: 700;
 	color: var(--white);
 	border-radius: rem(4);
 	padding: rem(10) rem(18);
