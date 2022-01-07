@@ -1,0 +1,60 @@
+@use '../util' as *;
+
+.contacts {
+
+    &__content {
+
+        > *:not(.logo) {
+            margin-top: rem(40);
+        }
+    }
+
+    &__direct,
+    &__social {
+
+        *:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__direct {
+
+        a {
+            display: block;
+            padding-left: rem(32);
+            position: relative;
+
+            &::before {
+                content: '';
+                min-width: rem(24);
+                min-height: rem(24);
+                display: inline-block;
+                position: absolute;
+                left: 0;
+            }
+
+            &:nth-child(2)::before {
+                background-image: url('../images/tools/phone.svg');
+            }
+
+            &:nth-child(3)::before {
+                background-image: url('../images/tools/mail.svg');
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__social {
+
+        a:not(:last-child) {
+            margin-right: rem(20);
+        }
+    }
+
+    .title--md::before {
+        content: 'Contacts';
+    }
+}
