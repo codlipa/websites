@@ -49,7 +49,7 @@
         height: rem(38);
 
         input {
-	        width: 100%;
+            width: 100%;
         }
 
         &::before {
@@ -105,8 +105,8 @@
 
     // Textarea
     &__textarea {
-        width: rem(458);
-        height: rem(134);
+        width: rem(520);
+        height: rem(190);
         background: url('../images/comment.svg') no-repeat 46% 44%;
         margin-bottom: rem(48);
         display: none;
@@ -117,14 +117,15 @@
 
         textarea {
             position: relative;
-            bottom: rem(-8);
+            left: rem(50);
+            bottom: rem(-50);
             width: rem(418);
             height: rem(90);
             border-width: 0;
             color: var(--text);
             line-height: 1.6;
             font-size: rem(14);
-            margin: rem(18) rem(20);
+            background-color: var(--yellow);
             resize: none;
         }
 
@@ -171,14 +172,14 @@
             padding-right: rem(56);
             padding-left: rem(24);
             margin: 0 auto rem(20);
-    
+
             @include breakpoint(large) {
                 margin-bottom: 0;
                 margin-right: rem(30);
                 display: inline-block;
             }
         }
-    
+
         a {
             text-decoration: underline;
         }

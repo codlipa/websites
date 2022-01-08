@@ -32,10 +32,15 @@
 
     &__block {
         max-width: rem(600);
-    }
+        margin: 0 auto;
 
-    &__block:last-child {
-        max-width: rem(360);
+        &:last-child {
+            max-width: rem(360);
+
+            & .button {
+                background: var(--blue);
+            }
+        }
     }
 
     &__input {
@@ -49,9 +54,5 @@
         @include breakpoint(large) {
             margin-bottom: 0;
         }
-    }
-
-    &__block:last-child .button {
-        background: var(--blue);
     }
 }
