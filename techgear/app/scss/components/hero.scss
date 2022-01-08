@@ -6,6 +6,11 @@
     justify-content: space-between;
     color: var(--white);
 
+    @include breakpoint-down(large) {
+        flex-direction: column;
+        text-align: center;
+    }
+
     &__content {
         max-width: rem(510);
 
@@ -39,6 +44,10 @@
 
     img {
         padding: rem(22) 0 rem(58);
-        max-width: 50%;
+        max-width: 100%;
+
+        @include breakpoint(large) {
+            max-width: 50%;
+        }
     }
 }

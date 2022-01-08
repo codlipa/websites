@@ -1,11 +1,16 @@
 @use '../util' as *;
 
 .header {
-    display: flex;
+    // TODO: Create Hamburger Menu
+    display: none;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     min-height: rem(100);
+
+    @include breakpoint(large) {
+        display: flex;
+    }
 
     &__nav a {
         position: relative;

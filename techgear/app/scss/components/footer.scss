@@ -9,6 +9,11 @@
         display: flex;
         justify-content: space-between;
         padding: rem(55) 0 rem(38);
+
+        @include breakpoint-down(large) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__item {

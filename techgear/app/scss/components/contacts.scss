@@ -5,6 +5,11 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint-down(large) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__content > *:not(.logo) {
@@ -52,10 +57,21 @@
     }
 
     &__form {
-        min-width: rem(720);
+
+        @include breakpoint(large) {
+            min-width: rem(720);
+        }
 
         div {
             display: flex;
+
+            @include breakpoint-down(large) {
+                display: block;
+
+                *:not(:last-child) {
+                    margin-bottom: rem(20);
+                }
+            }
 
             *:not(:last-child) {
                 margin-right: rem(20);
