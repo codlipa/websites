@@ -1,23 +1,56 @@
 @use '../util' as *;
 
 .header {
-    // TODO: Create Hamburger Menu
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     min-height: rem(100);
 
-    @include breakpoint(large) {
-        display: flex;
+    @include breakpoint-down(large) {
+
+        .hamburger {
+            display: flex;
+        }
+
+        &__nav {
+            display: none;
+            flex-direction: column;
+            min-width: 100%;
+
+            &.open {
+                display: flex;
+            }
+        }
     }
 
     &__nav a {
         position: relative;
+        text-align: center;
+
+        &:last-child {
+
+            @include breakpoint-down(large) {
+                margin: 0 auto;
+                display: block;
+                min-width: rem(320);
+                margin: rem(20) auto;
+            }
+        }
 
         &:not(:last-child) {
             margin-right: rem(60);
             padding: rem(40) 0;
+
+            @include breakpoint-down(large) {
+                padding: rem(20) 0;
+                margin: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
 
             &::after {
                 content: '';

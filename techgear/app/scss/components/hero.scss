@@ -9,6 +9,7 @@
     @include breakpoint-down(large) {
         flex-direction: column;
         text-align: center;
+        margin-top: rem(40);
     }
 
     &__content {

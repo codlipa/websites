@@ -1,2 +1,2 @@
-"use strict";var swiper=new Swiper(".swiper",{slidesPerView:4,spaceBetween:20,keyboard:{enabled:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+"use strict";var btn=document.querySelector(".hamburger"),nav=document.querySelector(".header__nav"),open=!1;btn.addEventListener("click",(function(){open?(btn.classList.remove("open"),nav.classList.remove("open"),open=!1):(btn.classList.add("open"),nav.classList.add("open"),open=!0)}));var swiper=new Swiper(".swiper",{slidesPerView:4,spaceBetween:20,keyboard:{enabled:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
 //# sourceMappingURL=script.js.map

@@ -21,6 +21,58 @@ body {
 	background-color: var(--background);
 }
 
+.hamburger {
+	position: relative;
+	min-height: rem(100);
+	min-width: rem(50);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: all var(--transition) ease-in-out;
+	background-color: transparent;
+
+	&.open &__btn {
+		transform: translateX(rem(-50));
+		background-color: transparent;
+		box-shadow: none;
+
+		&::before {
+			transform: rotate(45deg) translate(rem(35), rem(-35));
+		}
+
+		&::after {
+			transform: rotate(-45deg) translate(rem(35), rem(35));
+		}
+	}
+
+	&__btn {
+		min-width: rem(50);
+		min-height: rem(5);
+		border-radius: rem(5);
+		background-color: var(--white);
+		transition: all var(--transition) ease-in-out;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			min-width: rem(50);
+			min-height: rem(5);
+			background-color: var(--white);
+			transition: all var(--transition) ease-in-out;
+			border-radius: rem(5);
+		}
+
+		&::before {
+			transform: translateY(rem(-16));
+		}
+
+		&::after {
+			transform: translateY(rem(16));
+		}
+	}
+}
+
 .info {
     text-align: center;
 

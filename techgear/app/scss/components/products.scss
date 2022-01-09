@@ -20,7 +20,11 @@
         margin: 0 auto;
 
         @include breakpoint-down(large) {
-            margin-bottom: rem(100);
+            min-width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: rem(100);
+            }
         }
 
         img {
