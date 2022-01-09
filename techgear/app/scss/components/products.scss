@@ -5,13 +5,11 @@
 
     &__items {
         display: flex;
+        flex-wrap: wrap;
+        column-gap: rem(50);
         align-items: center;
         margin-top: rem(130);
         justify-content: space-between;
-
-        @include breakpoint-down(large) {
-            flex-direction: column;
-        }
     }
 
     &__item {
@@ -19,12 +17,10 @@
         max-height: rem(260);
         background-color: var(--black);
         border-radius: rem(20);
+        margin: 0 auto;
 
         @include breakpoint-down(large) {
-
-            &:not(:last-child) {
-                margin-bottom: rem(100);
-            }
+            margin-bottom: rem(100);
         }
 
         img {

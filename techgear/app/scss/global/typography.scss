@@ -59,13 +59,18 @@ a.link {
 		&::before {
 			text-transform: uppercase;
 			position: absolute;
-			top: rem(-60);
+			top: rem(-40);
 			left: 50%;
 			transform: translateX(-50%);
 			font-family: var(--font-title);
-			font-size: rem(80);
+			font-size: rem(60);
 			color: var(--blue);
 			opacity: .15;
+
+			@include breakpoint(large) {
+				font-size: rem(80);
+				top: rem(-60);
+			}
 		}
 	}
 

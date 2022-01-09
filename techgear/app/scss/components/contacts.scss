@@ -26,7 +26,7 @@
     }
 
     &__direct a {
-        display: block;
+        display: inline-block;
         padding-left: rem(32);
         position: relative;
 
@@ -43,7 +43,7 @@
             background-image: url('../images/tools/phone.svg');
         }
 
-        &:nth-child(3)::before {
+        &:nth-child(4)::before {
             background-image: url('../images/tools/mail.svg');
         }
 
@@ -52,8 +52,12 @@
         }
     }
 
-    &__social a:not(:last-child) {
-        margin-right: rem(20);
+    &__social {
+        margin-bottom: rem(80);
+
+        a:not(:last-child) {
+            margin-right: rem(20);
+        }
     }
 
     &__form {

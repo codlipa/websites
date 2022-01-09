@@ -1,7 +1,11 @@
 @use '../util' as *;
 
 section.container {
-    padding-top: rem(200);
+	padding-top: rem(200);
+
+	&:nth-child(5) {
+		padding-top: rem(125);
+	}
 }
 
 .container {
@@ -10,7 +14,7 @@ section.container {
 	margin: 0 auto;
 
 	@include breakpoint(large) {
-		padding: 0;
 		transform: translate(0, 0);
+		padding: 0;
 	}
 }

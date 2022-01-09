@@ -16,6 +16,17 @@
 
         .btn {
             padding-left: rem(45);
+
+            @include breakpoint-down(large) {
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                max-width: rem(320);
+
+                &:not(:last-child) {
+                    margin-bottom: rem(20);
+                }
+            }
     
             svg {
                 transition: var(--transition) ease-in-out;
@@ -43,10 +54,11 @@
     }
 
     img {
-        padding: rem(22) 0 rem(58);
+        padding: rem(58) 0 0;
         max-width: 100%;
 
         @include breakpoint(large) {
+            padding: rem(22) 0 rem(58);
             max-width: 50%;
         }
     }

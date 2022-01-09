@@ -12,11 +12,18 @@
 
         @include breakpoint-down(large) {
             flex-direction: column;
-            text-align: center;
         }
     }
 
     &__item {
+
+        @include breakpoint-down(large) {
+            margin-bottom: 0;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(60);
+        }
 
         h4 {
             margin-bottom: rem(30);

@@ -50,6 +50,9 @@ body {
 	}
 
 	& + & {
-		margin-left: rem(16);
+
+		@include breakpoint(large) {
+			margin-left: rem(16);
+		}
 	}
 }
