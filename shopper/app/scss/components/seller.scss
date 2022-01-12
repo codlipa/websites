@@ -1,21 +1,30 @@
 @use '../util' as *;
 
 .seller {
-    margin-top: rem(292);
     margin-bottom: rem(116);
+
+    @include breakpoint(large) {
+        margin-top: rem(292);
+    }
 
     &__items {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(70);
+
+        @include breakpoint(xlarge) {
+            justify-content: space-between;
+        }
     }
 
     &__item {
         max-width: rem(380);
-        margin-bottom: rem(40);
     }
 
     .explore {
+        margin-top: rem(40);
         text-align: center;
     }
 }

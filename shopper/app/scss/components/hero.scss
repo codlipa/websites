@@ -7,6 +7,10 @@
     color: var(--white);
     flex-grow: 1;
 
+    @include breakpoint-down(large) {
+        min-height: rem(650);
+    }
+
     &__inner {
         position: absolute;
         top: 50%;
