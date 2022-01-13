@@ -4,6 +4,8 @@
 
     &__items {
         display: flex;
+        gap: rem(70);
+        flex-wrap: wrap;
         justify-content: space-evenly;
         border-bottom: rem(1) solid var(--gray-dark);
         padding-bottom: rem(32);
@@ -30,6 +32,14 @@
             a {
                 padding-left: rem(28);
 
+                @include breakpoint-down(small) {
+                    padding: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
                 &::before {
                     content: '';
                     border-radius: 50%;
@@ -46,6 +56,11 @@
     &__item * {
         font-weight: 700;
         color: var(--black);
+        min-width: rem(215);
+
+        @include breakpoint-down(small) {
+            text-align: center;
+        }
 
         li {
             font-size: rem(14);

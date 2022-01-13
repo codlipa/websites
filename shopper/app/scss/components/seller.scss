@@ -1,10 +1,12 @@
 @use '../util' as *;
 
 .seller {
-    margin-bottom: rem(116);
+    margin: rem(116) auto;
+    text-align: center;
 
     @include breakpoint(large) {
         margin-top: rem(292);
+        text-align: left;
     }
 
     &__items {

@@ -21,6 +21,10 @@
     &__title {
         line-height: 1.4;
         font-weight: 300;
-        font-size: rem(50);
+        font-size: rem(30);
+
+        @include breakpoint(large) {
+            font-size: rem(50);
+        }
     }
 }
