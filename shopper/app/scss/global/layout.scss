@@ -73,7 +73,11 @@
         padding-top: rem(8);
 
         *:not(:last-child) {
-            margin-right: rem(18);
+            margin: 0 rem(18);
+
+            @include breakpoint(large) {
+                margin-right: rem(18);
+            }
         }
     }
 

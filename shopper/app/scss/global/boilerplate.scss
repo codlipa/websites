@@ -62,8 +62,13 @@ img {
     border: rem(1) solid var(--gray);
 
     &--sm {
-        min-width: rem(325);
+        max-width: 100%;
+        min-width: unset;
         border-radius: rem(5) 0 0 rem(5);
+
+        @include breakpoint(large) {
+            min-width: rem(325);
+        }
     }
 }
 
