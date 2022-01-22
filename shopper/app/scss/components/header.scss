@@ -60,9 +60,14 @@
     &__buttons {
         display: flex;
         align-items: center;
+        text-align: center;
 
         @include breakpoint-down(large) {
             flex-direction: column;
+
+            &-item:last-child {
+                margin-top: rem(30);
+            }
         }
 
         &-login > *:last-child::after {
@@ -72,12 +77,22 @@
             border-top-color: var(--gray-dark);
         }
 
-        &-item:last-child {   
-            margin-top: rem(30);
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        *:not(:last-child) {
-            margin-right: rem(25);
+        * {
+            height: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: rem(20);
+
+                @include breakpoint(large) {
+                    margin-right: rem(25);
+                }
+            }
         }
     }
 }
