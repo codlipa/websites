@@ -54,6 +54,7 @@
     }
 
     &__item * {
+        margin-top: 0;
         font-weight: 700;
         color: var(--black);
         min-width: rem(215);
@@ -83,7 +84,7 @@
                 margin-right: rem(20);
             }
 
-            @include breakpoint-down(large) {
+            @include breakpoint-down(small) {
                 display: block;
 
                 &:not(:last-child) {
