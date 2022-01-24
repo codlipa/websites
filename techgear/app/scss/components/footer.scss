@@ -7,22 +7,27 @@
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: rem(55) 0 rem(38);
 
-        @include breakpoint-down(large) {
-            flex-direction: column;
+        @include breakpoint-down(small) {
+            justify-content: center;
+
+            .footer__item {
+                text-align: center;
+            }
         }
     }
 
     &__item {
+        min-width: rem(280);
 
-        @include breakpoint-down(large) {
-            margin-bottom: 0;
-        }
+        @include breakpoint-down(medium) {
 
-        &:not(:last-child) {
-            margin-bottom: rem(60);
+            &:not(:last-child) {
+                margin-bottom: rem(60);
+            }
         }
 
         h4 {

@@ -15,17 +15,9 @@
     &__item {
         min-width: rem(360);
         max-height: rem(260);
+        margin: 0 auto rem(100);
         background-color: var(--black);
         border-radius: rem(20);
-        margin: 0 auto;
-
-        @include breakpoint-down(large) {
-            min-width: 100%;
-
-            &:not(:last-child) {
-                margin-bottom: rem(100);
-            }
-        }
 
         img {
             top: rem(-90);
