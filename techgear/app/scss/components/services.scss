@@ -19,9 +19,9 @@
         border-radius: rem(20);
 
         @include breakpoint-down(large) {
-            padding: rem(45) rem(25) rem(25);
             flex-direction: column;
             text-align: center;
+            padding: rem(20);
             max-height: 100%;
         }
 

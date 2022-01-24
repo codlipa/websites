@@ -13,11 +13,14 @@
     }
 
     &__item {
-        min-width: rem(360);
         max-height: rem(260);
         margin: 0 auto rem(100);
         background-color: var(--black);
         border-radius: rem(20);
+
+        @include breakpoint(large) {
+            min-width: rem(360);
+        }
 
         img {
             top: rem(-90);
