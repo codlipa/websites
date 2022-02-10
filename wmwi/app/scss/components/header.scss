@@ -1,1 +1,46 @@
 @use '../util' as *;
+
+.header {
+    background-image: linear-gradient(var(--special) 50%, var(--text) 50%);
+	color: var(--white);
+    min-height: 100vh;
+    font-weight: 600;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(22) 0;
+    }
+
+    &__menu *:not(:last-child) {
+        margin-right: rem(30);
+        float: left;
+    }
+
+    &__logo {
+        transform: translate(-50%);
+    }
+
+    &__promo {
+        display: flex;
+        align-items: center;
+        min-height: rem(700);
+        background-image: url('../images/header.webp');
+    }
+
+    &__buttons {
+        position: absolute;
+        top: rem(90);
+        left: rem(110);
+    }
+
+    &__text {
+        margin-left: rem(100);
+        font-size: rem(30);
+
+        h1 {
+            font-size: rem(85);
+        }
+    }
+}
