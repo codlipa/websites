@@ -1,9 +1,12 @@
 @use '../util' as *;
 
 .header {
-    background-image: linear-gradient(var(--special) 50%, var(--text) 50%);
-	color: var(--white);
-    font-weight: 700;
+    background-image: linear-gradient(var(--brand) 50%, var(--black) 50%);
+
+    &, a {
+	    color: var(--white);
+        font-weight: 700;
+    }
 
     &__inner {
         display: flex;
@@ -45,7 +48,7 @@
         &::before {
             content: '01';
             font-size: rem(70);
-            color: var(--text);
+            color: var(--black);
             position: absolute;
             top: rem(40);
             left: rem(-60);
@@ -79,7 +82,7 @@
             z-index: -1;
             min-width: rem(75);
             min-height: rem(27);
-            background-color: var(--special);
+            background-color: var(--brand);
         }
     }
 
@@ -95,16 +98,26 @@
             &::before {
                 content: '';
                 position: absolute;
-                top: rem(-15);
+                top: rem(-23);
                 left: rem(-37);
                 min-height: rem(3);
                 min-width: rem(100);
                 background-color: var(--white);
             }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: rem(50);
+                bottom: rem(-55);
+                min-height: rem(3);
+                min-width: rem(200);
+                background-color: var(--white);
+            }
         }
 
         p {
-            margin-top: rem(50);
+            margin-top: rem(100);
 
             .arrow {
                 top: rem(6);
