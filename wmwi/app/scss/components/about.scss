@@ -1,4 +1,61 @@
 @use '../util' as *;
 
 .about {
+
+    &__inner {
+        display: flex;
+	    font-family: 'HelveticaNeue Bold';
+
+        > * {
+            display: flex;
+            flex-grow: 1;
+        }
+    }
+
+    &__nav {
+        display: inline-block;
+        transform: rotate(-90deg);
+        font-size: rem(13);
+    }
+
+    &__menu {
+        display: flex;
+        gap: rem(25);
+        text-transform: uppercase;
+
+        :first-child {
+            list-style-type: none;
+        }
+
+        a {
+            padding: rem(17);
+            transition: var(--transition);
+
+            &:hover {
+                background-color: var(--brand);
+                color: var(--white);
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: rem(-50);
+            left: rem(-50);
+            min-width: rem(315);
+            min-height: rem(315);
+            border: rem(20) solid var(--brand);
+        }
+    }
+
+    &__text p {
+        transform: rotate(-90deg);
+    }
 }

@@ -21,7 +21,7 @@
         padding: rem(22) 0;
     }
 
-    &__menu *:not(:last-child) {
+    &__menu :not(:last-child) {
         margin-right: rem(30);
         float: left;
     }
