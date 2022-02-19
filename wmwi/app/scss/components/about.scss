@@ -8,14 +8,24 @@
 
         > * {
             display: flex;
-            flex-grow: 1;
+            max-width: 25%;
+
+            &:last-child {
+                flex-direction: column;
+            }
         }
     }
 
     &__nav {
-        display: inline-block;
-        transform: rotate(-90deg);
         font-size: rem(13);
+        max-height: rem(47);
+        position: relative;
+        right: rem(-180);
+        left: rem(-180);
+
+        &, ~ .about__text p {
+            transform: rotate(-90deg);
+        }
     }
 
     &__menu {
@@ -40,9 +50,8 @@
 
     &__image {
         position: relative;
-        display: inline-block;
 
-        &::after {
+        &::before {
             content: '';
             display: block;
             position: absolute;
@@ -55,7 +64,19 @@
         }
     }
 
-    &__text p {
-        transform: rotate(-90deg);
+    &__text {
+        position: relative;
+
+        * {
+            position: absolute;
+            top: rem(-50);
+            left: rem(20);
+            white-space: nowrap;
+        }
+
+        p {
+            top: rem(160);
+            left: rem(-160);
+        }
     }
 }
