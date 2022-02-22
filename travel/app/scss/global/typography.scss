@@ -20,5 +20,7 @@ li {
 a,
 a:visited,
 a:active {
+	display: inline-block;
 	text-decoration: none;
+	color: var(--black);
 }

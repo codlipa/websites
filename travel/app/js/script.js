@@ -1,5 +1,8 @@
-console.log('HELLO');
+const swiper = new Swiper('.swiper', {
+	loop: true,
 
-const test = () => {
-	console.log('this is a test');
-};
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev'
+	}
+});
