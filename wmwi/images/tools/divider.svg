@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="32.708" viewBox="0 0 167 32.708">
+  <g id="Group_18" data-name="Group 18" transform="translate(0 3.354)">
+    <path id="Triangle" d="M0,18,9,0H9l9,18" transform="translate(77)" fill="none" stroke="#2a2a2a" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Triangle-2" data-name="Triangle" d="M0-18,9,0H9l9-18" transform="translate(72 26)" fill="none" stroke="#2a2a2a" stroke-miterlimit="10" stroke-width="3"/>
+    <g id="Rectangle_41" data-name="Rectangle 41" transform="translate(0 8)" fill="#202020" stroke="#2a2a2a" stroke-miterlimit="10" stroke-width="1">
+      <rect width="75" height="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="74" height="4" fill="none"/>
+    </g>
+    <g id="Rectangle_41-2" data-name="Rectangle 41" transform="translate(92 13)" fill="none" stroke="#2a2a2a" stroke-miterlimit="10" stroke-width="1">
+      <rect width="75" height="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="74" height="4" fill="none"/>
+    </g>
+  </g>
+</svg>
