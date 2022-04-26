@@ -10,6 +10,10 @@
 		margin: 0 auto;
 	}
 
+	&-wrapper {
+		margin-bottom: rem(155);
+	}
+
 	&-content {
 		display: flex;
 		justify-content: space-between;
@@ -21,5 +25,30 @@
 		img:not(:last-child) {
 			margin-right: rem(30);
 		}
+	}
+
+	&-pagination {
+		color: hsl(0, 0%, 77%);
+		letter-spacing: rem(4.2);
+		font-size: rem(30);
+
+		&-total {
+			color: var(--black);
+		}
+	}
+
+	&-button-prev,
+	&-button-next {
+		position: absolute;
+		top: rem(355*5);
+		z-index: 11;
+	}
+
+	&-button-prev {
+		left: rem(385*2);
+	}
+
+	&-button-next {
+		right: rem(385*2);
 	}
 }
