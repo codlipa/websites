@@ -1,0 +1,12 @@
+@use "../util" as *;
+
+.gallery {
+
+  &__text {
+		max-width: rem(860);
+		padding: 0 rem(20);
+		text-align: center;
+		margin: 0 auto;
+	}
+
+}

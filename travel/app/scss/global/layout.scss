@@ -10,3 +10,7 @@
 		padding: 0;
 	}
 }
+
+section:not(.about) {
+	margin-bottom: rem(150);
+}

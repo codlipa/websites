@@ -37,18 +37,17 @@
 		}
 	}
 
+	&-buttons {
+		display: flex;
+		justify-content: center;
+	}
+
 	&-button-prev,
 	&-button-next {
-		position: absolute;
-		top: rem(355*5);
+		position: relative;
+		font-weight: 700;
 		z-index: 11;
-	}
-
-	&-button-prev {
-		left: rem(385*2);
-	}
-
-	&-button-next {
-		right: rem(385*2);
+		bottom: rem(12);
+		margin: 0 rem(98);
 	}
 }
