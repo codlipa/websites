@@ -1,7 +1,7 @@
 @use '../util' as *;
 
 :root {
-	--swiper-theme-color: hsl(0, 0%, 50%);
+	--swiper-theme-color: var(--grey);
 	--swiper-navigation-size: 34px;
 }
 

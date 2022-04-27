@@ -1,5 +1,9 @@
 @use '../util' as *;
 
+section:not(.about) {
+	margin-bottom: rem(150);
+}
+
 .container {
 	padding: 0 rem(24);
 	max-width: rem(1720);
@@ -9,8 +13,4 @@
 		transform: translate(0, 0);
 		padding: 0;
 	}
-}
-
-section:not(.about) {
-	margin-bottom: rem(150);
 }

@@ -67,4 +67,12 @@
         font-size: rem(30);
         margin-bottom: rem(65);
     }
+
+    &__btn {
+		border-color: var(--white);
+
+		&:hover {
+			background-color: rgba(0, 0, 0, .35);
+		}
+    }
 }

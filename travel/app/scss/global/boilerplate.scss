@@ -35,43 +35,52 @@ body {
 		top: rem(-35);
 	}
 
+	&--small,
 	&--big {
-		margin-bottom: rem(19);
-		font-weight: 700;
 
 		&::before {
 			content: '';
 		}
 	}
+
+	&--small {
+		margin: rem(60) 0 rem(45);
+		font-size: rem(18);
+	}
+
+	&--big {
+		margin-bottom: rem(19);
+		font-weight: 700;
+	}
 }
 
 .subtitle {
-	color: var(--text);
+	margin-bottom: rem(80);
 	font-size: rem(28);
-	margin-bottom: rem(95);
+	font-weight: 500;
+	color: var(--text);
 }
 
 .text {
 	margin-bottom: rem(44);
 	color: var(--text);
+
+	&--big {
+		margin-bottom: rem(80);
+		line-height: rem(40);
+		max-width: rem(700);
+	}
 }
 
 .btn {
 	font-size: rem(18);
 	padding: rem(15) rem(90);
+	text-transform: uppercase;
 	transition: var(--transition);
 	border: rem(2) solid var(--black);
 
 	&:hover {
 		background-color: var(--black);
 		color: var(--white);
-	}
-
-	&--light {
-		border-color: var(--white);
-
-		&:hover {
-			background-color: rgba(0, 0, 0, .35);
-		}
 	}
 }
