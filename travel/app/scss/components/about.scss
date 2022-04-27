@@ -6,6 +6,18 @@
     justify-content: space-between;
     padding: rem(35) 0 rem(90);
 
+    &:nth-child(4) .title::before {
+        content: 'About us';
+    }
+
+    &:nth-child(7) .title {
+        max-width: rem(600);
+
+        &::before {
+            content: 'Next Tour';
+        }
+    }
+
     &__content {
         max-width: rem(740);
         padding: 0 rem(30);

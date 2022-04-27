@@ -27,20 +27,12 @@ body {
 	position: relative;
 
 	&::before {
-		content: 'About us';
+		content: '';
 		text-transform: capitalize;
 		font-size: rem(22);
 		color: var(--grey);
 		position: absolute;
 		top: rem(-35);
-	}
-
-	&--small,
-	&--big {
-
-		&::before {
-			content: '';
-		}
 	}
 
 	&--small {
