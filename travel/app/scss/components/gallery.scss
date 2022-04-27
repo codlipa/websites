@@ -19,13 +19,11 @@
 	&__btn {
 		font-size: rem(16);
 		padding: rem(18) rem(45);
-		border-color: hsl(0, 1%, 86%);
-		background-color: hsl(0, 1%, 86%);
+		border-color: var(--light-grey);
 
-		&:hover {
-			background-color: transparent;
-			border-color: var(--grey);
+    &, &:hover {
+			background-color: var(--light-grey);
 			color: var(--black);
-		}
+    }
 	}
 }

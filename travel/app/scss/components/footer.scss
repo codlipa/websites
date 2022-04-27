@@ -1,2 +1,69 @@
 @use '../util' as *;
 
+.tourist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-grey);
+  padding: rem(150);
+
+  &__form {
+    font-size: 0;
+
+    *:not(:last-child) {
+      margin-right: rem(60);
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(18);
+    color: var(--text);
+    margin-top: rem(-28);
+  }
+
+  &__btn {
+		font-size: rem(16);
+		padding: rem(22) rem(90);
+		border-color: var(--button);
+    color: var(--white);
+
+    &, &:hover {
+      background-color: var(--button);
+    }
+	}
+}
+
+.details {
+  text-align: center;
+  text-transform: uppercase;
+  padding: rem(85) 0 rem(105);
+
+  &__menu {
+    font-size: 0;
+    margin-bottom: rem(55);
+
+    li + li {
+      margin-left: rem(64);
+    }
+
+    a {
+      font-size: rem(22);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: rem(18);
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+}
