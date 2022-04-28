@@ -4,10 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: rem(35) 0 rem(90);
 
-    &:nth-child(4) .title::before {
-        content: 'About us';
+    &:nth-child(4) {
+        padding-top: rem(35);
+
+        .title::before {
+            content: 'About us';
+        }
     }
 
     &:nth-child(7) .title {
