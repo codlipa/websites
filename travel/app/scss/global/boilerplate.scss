@@ -19,6 +19,10 @@ body {
 	font-family: var(--font-body);
 }
 
+img {
+	max-width: 100%;
+}
+
 .title {
 	letter-spacing: rem(4);
 	text-transform: uppercase;

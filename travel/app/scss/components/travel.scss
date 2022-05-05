@@ -1,6 +1,7 @@
 @use "../util" as *;
 
 .travel {
+	padding: 0 rem(24);
 	font-size: rem(18);
 	letter-spacing: rem(3.8);
 
@@ -15,7 +16,11 @@
 	}
 
 	&__content:not(:last-child) {
-		margin-bottom: rem(80);
+		margin-right: rem(30);
+
+		@include breakpoint-down(large) {
+			margin: 0 0 rem(80);
+		}
 	}
 
   &__text {
