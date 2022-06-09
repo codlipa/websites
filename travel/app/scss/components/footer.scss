@@ -8,11 +8,23 @@
 	margin-top: rem(90);
   padding: rem(150);
 
+  @include breakpoint-down(large) {
+    flex-direction: column;
+    text-align: center;
+  }
+
   &__form {
     font-size: 0;
 
     *:not(:last-child) {
-      margin-right: rem(60);
+      margin-bottom: rem(20);
+    }
+
+    @include breakpoint(large) {
+
+      * {
+        margin-left: rem(60);
+      }
     }
   }
 
@@ -45,6 +57,12 @@
 
     li + li {
       margin-left: rem(64);
+
+      @include breakpoint-down(large) {
+        margin-top: rem(20);
+        margin-left: 0;
+        display: block;
+      }
     }
 
     a {

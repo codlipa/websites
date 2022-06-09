@@ -36,11 +36,23 @@
         font-size: 0;
         transform: translateX(-50%);
 
+        @include breakpoint-down(medium) {
+            left: 25%;
+        }
+
         * {
             font-size: rem(20);
+            display: block;
 
-            &:not(:last-child) {
-                margin-right: rem(112);
+            @include breakpoint(large) {
+
+                & {
+                    display: inline-block;
+
+                    &:not(:last-child) {
+                        margin-right: rem(112);
+                    }
+                }
             }
 
             &:hover {
@@ -49,9 +61,14 @@
         }
 
         &--aside {
-            top: 50%;
-            left: rem(37);
-            transform: translate(-50%, -50%) rotate(270deg);
+            left: 75%;
+            transform: translateX(-50%) rotate(0deg);
+
+            @include breakpoint(large) {
+                top: 50%;
+                left: rem(37);
+                transform: translate(-50%, -50%) rotate(270deg);
+            }
         }
     }
 
@@ -61,6 +78,12 @@
         font-weight: 700;
         font-size: rem(100);
         line-height: 0.1;
+
+        @include breakpoint-down(large) {
+            margin-bottom: rem(20);
+            line-height: initial;
+            font-size: rem(60);
+        }
     }
 
     &__subtitle {
