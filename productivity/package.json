@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-css-starter-kit",
+  "scripts": {
+    "build": "tailwindcss -i src/css/tailwind.css -o build/css/tailwind.min.css -w",
+    "prod": "NODE_ENV=production tailwindcss -i src/css/tailwind.css -o build/css/tailwind.min.css --minify"
+  },
+  "author": "thelabuzov",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.8",
+    "tailwindcss": "^2.2.17",
+    "win-node-env": "^0.4.0"
+  }
+}
