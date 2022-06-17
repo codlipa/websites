@@ -634,6 +634,7 @@ video {
   padding-right: 1.25rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  font-family: Quicksand, sans-serif;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgba(209, 209, 228, var(--tw-text-opacity));
@@ -647,6 +648,7 @@ video {
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  font-family: Quicksand, sans-serif;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(58, 121, 255, var(--tw-text-opacity));
@@ -665,6 +667,7 @@ video {
   padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  font-family: Quicksand, sans-serif;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));

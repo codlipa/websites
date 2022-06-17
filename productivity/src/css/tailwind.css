@@ -10,14 +10,14 @@
   }
 
   .btn {
-    @apply rounded-r border-2 border-solid border-gray-light text-gray-light font-medium py-3 px-5;
+    @apply rounded-r border-2 border-solid border-gray-light text-gray-light font-quicksand font-medium py-3 px-5;
   }
 
   .btn-light {
-    @apply rounded bg-blue-400 text-blue-500 font-bold py-3 px-4;
+    @apply rounded bg-blue-400 text-blue-500 font-quicksand font-bold py-3 px-4;
   }
 
   .btn-dark {
-    @apply rounded-l border-2 border-solid border-blue-500 bg-blue-500 text-white font-bold py-3 px-6;
+    @apply rounded-l border-2 border-solid border-blue-500 bg-blue-500 text-white font-quicksand font-bold py-3 px-6;
   }
 }
