@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container-lg {
+    @apply max-w-5xl mx-auto px-10;
+  }
+
+  .btn {
+    @apply rounded-r border-2 border-solid border-gray-light text-gray-light font-medium py-3 px-5;
+  }
+
+  .btn-light {
+    @apply rounded bg-blue-400 text-blue-500 font-bold py-3 px-4;
+  }
+
+  .btn-dark {
+    @apply rounded-l border-2 border-solid border-blue-500 bg-blue-500 text-white font-bold py-3 px-6;
+  }
+}

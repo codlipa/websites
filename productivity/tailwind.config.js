@@ -5,6 +5,9 @@ module.exports = {
 		minHeight: {
 			600: "600px",
 		},
+		minWidth: {
+			410: "410px",
+		},
 		container: {
 			center: true,
 			padding: "2.5rem",
@@ -23,8 +26,9 @@ module.exports = {
 			menu: "#b6bac7",
 			brand: "#5e81fe",
 			title: "#3d4f9f",
-			content: "#8d96bd",
 			background: "#f4f7ff",
+			"gray-dark": "#8d96bd",
+			"gray-light": "#d1d1e4",
 		},
 		fontFamily: {
 			roboto: ["Roboto", "sans-serif"],
