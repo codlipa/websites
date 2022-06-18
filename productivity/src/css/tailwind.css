@@ -9,6 +9,14 @@
     @apply max-w-5xl mx-auto px-10;
   }
 
+  .suptitle {
+    @apply font-roboto font-medium text-xs text-title uppercase mb-5;
+  }
+
+  .title {
+    @apply font-quicksand font-medium text-title mb-7;
+  }
+
   .btn {
     @apply rounded-r border-2 border-solid border-gray-light text-gray-light font-quicksand font-medium py-3 px-5;
   }

@@ -623,6 +623,25 @@ video {
   padding-right: 2.5rem;
 }
 
+.suptitle {
+  margin-bottom: 1.25rem;
+  font-family: Roboto, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(61, 79, 159, var(--tw-text-opacity));
+}
+
+.title {
+  margin-bottom: 1.75rem;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(61, 79, 159, var(--tw-text-opacity));
+}
+
 .btn {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
