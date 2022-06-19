@@ -16,17 +16,17 @@ module.exports = {
 			},
 		},
 		colors: {
-			"blue-500": "#3a79ff",
-			"blue-400": "#d2e1ff",
-			"red-500": "#d43f3f",
-			"red-400": "#ffd7d7",
+			"blue-600": "#3a79ff",
+			"blue-500": "#d2e1ff",
+			"blue-400": "#f4f7ff",
+			"red-600": "#d43f3f",
+			"red-500": "#ffd7d7",
 			indigo: "#697ca6",
 			white: "#fff",
 
 			menu: "#b6bac7",
 			brand: "#5e81fe",
 			title: "#3d4f9f",
-			background: "#f4f7ff",
 			"gray-dark": "#8d96bd",
 			"gray-light": "#d1d1e4",
 		},
@@ -37,7 +37,8 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				hero: "url('../images/hero-bg.svg')",
+				hero: "url('../images/clouds-1.svg')",
+				features: "url('../images/clouds-2.svg')",
 			},
 		},
 	},
