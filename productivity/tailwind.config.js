@@ -39,6 +39,7 @@ module.exports = {
 			backgroundImage: {
 				hero: "url('../images/clouds-1.svg')",
 				features: "url('../images/clouds-2.svg')",
+				start: "url('../images/clouds-3.svg')",
 			},
 		},
 	},

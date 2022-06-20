@@ -659,34 +659,6 @@ video {
   color: rgba(209, 209, 228, var(--tw-text-opacity));
 }
 
-.btn-light-red {
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 215, 215, var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-family: Quicksand, sans-serif;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgba(212, 63, 63, var(--tw-text-opacity));
-}
-
-.btn-light-blue {
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(210, 225, 255, var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-family: Quicksand, sans-serif;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgba(58, 121, 255, var(--tw-text-opacity));
-}
-
 .btn-dark {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -704,6 +676,34 @@ video {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-light-blue {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(210, 225, 255, var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(58, 121, 255, var(--tw-text-opacity));
+}
+
+.btn-light-red {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 215, 215, var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(212, 63, 63, var(--tw-text-opacity));
 }
 
 .sr-only{
@@ -13906,6 +13906,10 @@ video {
 
 .bg-features{
   background-image: url('../images/clouds-2.svg');
+}
+
+.bg-start{
+  background-image: url('../images/clouds-3.svg');
 }
 
 .from-blue-600{
@@ -32542,6 +32546,10 @@ video {
     background-image: url('../images/clouds-2.svg');
   }
 
+  .sm\:bg-start{
+    background-image: url('../images/clouds-3.svg');
+  }
+
   .sm\:from-blue-600{
     --tw-gradient-from: #3a79ff;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(58, 121, 255, 0));
@@ -51110,6 +51118,10 @@ video {
 
   .md\:bg-features{
     background-image: url('../images/clouds-2.svg');
+  }
+
+  .md\:bg-start{
+    background-image: url('../images/clouds-3.svg');
   }
 
   .md\:from-blue-600{
@@ -69682,6 +69694,10 @@ video {
     background-image: url('../images/clouds-2.svg');
   }
 
+  .lg\:bg-start{
+    background-image: url('../images/clouds-3.svg');
+  }
+
   .lg\:from-blue-600{
     --tw-gradient-from: #3a79ff;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(58, 121, 255, 0));
@@ -88252,6 +88268,10 @@ video {
     background-image: url('../images/clouds-2.svg');
   }
 
+  .xl\:bg-start{
+    background-image: url('../images/clouds-3.svg');
+  }
+
   .xl\:from-blue-600{
     --tw-gradient-from: #3a79ff;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(58, 121, 255, 0));
@@ -106820,6 +106840,10 @@ video {
 
   .\32xl\:bg-features{
     background-image: url('../images/clouds-2.svg');
+  }
+
+  .\32xl\:bg-start{
+    background-image: url('../images/clouds-3.svg');
   }
 
   .\32xl\:from-blue-600{
