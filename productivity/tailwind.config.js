@@ -26,6 +26,7 @@ module.exports = {
 
 			menu: "#b6bac7",
 			brand: "#5e81fe",
+			input: "#efeff7",
 			title: "#3d4f9f",
 			"gray-dark": "#8d96bd",
 			"gray-light": "#d1d1e4",

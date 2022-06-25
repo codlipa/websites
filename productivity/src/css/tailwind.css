@@ -21,7 +21,7 @@
     @apply rounded-r border-2 border-solid border-gray-light text-gray-light font-quicksand font-medium py-3 px-5;
   }
 
-  .btn-dark {
+  .btn-dark-blue {
     @apply rounded-l border-2 border-solid border-blue-600 bg-blue-600 text-white font-quicksand font-bold py-3 px-6;
   }
 

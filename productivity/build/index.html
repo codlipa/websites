@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./css/tailwind.min.css">
     <title>Productivity</title>
     <style>
-        input {
-            background-color: #efeff7;
-        }
-
         input+label svg {
             stroke: #8d96bd;
         }
@@ -28,7 +24,6 @@
 
         input:checked~p {
             max-height: 100vh;
-            padding-top: 2rem;
             padding-bottom: 2rem;
         }
 
@@ -194,7 +189,7 @@
                 </p>
 
                 <div class="flex">
-                    <a class="btn-dark flex items-center" href="#">
+                    <a class="btn-dark-blue flex items-center" href="#">
                         View video
                         <svg class="w-2.5 h-3 fill-current ml-2" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -303,8 +298,8 @@
     <!-- / Stats -->
 
     <!-- FAQ -->
-    <section class="shadow py-44">
-        <div class="container">
+    <section class="relative shadow py-44">
+        <div class="container-lg">
             <div class="text-center">
                 <h4 class="suptitle">Customer help</h4>
                 <h2 class="title text-2xl mb-24">Frequently asked questions</h2>
@@ -319,73 +314,88 @@
                     </svg>
                     Reque insolens in vel?
                 </label>
-                <p class="max-h-0 px-20">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos
-                    ius an, in mel diceret persecuti.
+                <p class="max-h-0 pl-20 pr-4 flex justify-between">
+                    <span class="max-w-lg">
+                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
+                        tractatos ius an, in mel diceret persecuti.
+                    </span>
+                    <a class="btn bg-input text-indigo border-0 px-8 my-auto" href="#">Go to documentation</a>
                 </p>
             </div>
             <!-- / FAQ Item -->
 
             <!-- FAQ Item -->
             <div class="overflow-hidden border-b border-solid text-gray-dark border-gray-light">
-                <input class="absolute opacity-0" id="check-1" type="checkbox">
-                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-1">
+                <input class="absolute opacity-0" id="check-2" type="checkbox">
+                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-2">
                     <svg class="w-5 h-3 mx-6 my-auto transition" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 2L9 9L16 2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                     </svg>
                     Vis rebum error graecis ea, id sit postea accusamus?
                 </label>
-                <p class="max-h-0 px-20">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos
-                    ius an, in mel diceret persecuti.
+                <p class="max-h-0 pl-20 pr-4 flex justify-between">
+                    <span class="max-w-lg">
+                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
+                        tractatos ius an, in mel diceret persecuti.
+                    </span>
+                    <a class="btn bg-input text-indigo border-0 px-8 my-auto" href="#">Go to documentation</a>
                 </p>
             </div>
             <!-- / FAQ Item -->
 
             <!-- FAQ Item -->
             <div class="overflow-hidden border-b border-solid text-gray-dark border-gray-light">
-                <input class="absolute opacity-0" id="check-1" type="checkbox">
-                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-1">
+                <input class="absolute opacity-0" id="check-3" type="checkbox">
+                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-3">
                     <svg class="w-5 h-3 mx-6 my-auto transition" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 2L9 9L16 2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                     </svg>
                     Lorem repudiandae ne nec?
                 </label>
-                <p class="max-h-0 px-20">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos
-                    ius an, in mel diceret persecuti.
+                <p class="max-h-0 pl-20 pr-4 flex justify-between">
+                    <span class="max-w-lg">
+                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
+                        tractatos ius an, in mel diceret persecuti.
+                    </span>
+                    <a class="btn bg-input text-indigo border-0 px-8 my-auto" href="#">Go to documentation</a>
                 </p>
             </div>
             <!-- / FAQ Item -->
 
             <!-- FAQ Item -->
             <div class="overflow-hidden border-b border-solid text-gray-dark border-gray-light">
-                <input class="absolute opacity-0" id="check-1" type="checkbox">
-                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-1">
+                <input class="absolute opacity-0" id="check-4" type="checkbox">
+                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-4">
                     <svg class="w-5 h-3 mx-6 my-auto transition" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 2L9 9L16 2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                     </svg>
                     Ad dicit numquam vel. Et eos iudico feugait percipitur?
                 </label>
-                <p class="max-h-0 px-20">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos
-                    ius an, in mel diceret persecuti.
+                <p class="max-h-0 pl-20 pr-4 flex justify-between">
+                    <span class="max-w-lg">
+                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
+                        tractatos ius an, in mel diceret persecuti.
+                    </span>
+                    <a class="btn bg-input text-indigo border-0 px-8 my-auto" href="#">Go to documentation</a>
                 </p>
             </div>
             <!-- / FAQ Item -->
 
             <!-- FAQ Item -->
             <div class="overflow-hidden border-b border-solid text-gray-dark border-gray-light">
-                <input class="absolute opacity-0" id="check-1" type="checkbox">
-                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-1">
+                <input class="absolute opacity-0" id="check-5" type="checkbox">
+                <label class="flex py-8 cursor-pointer font-quicksand font-medium transition w-full" for="check-5">
                     <svg class="w-5 h-3 mx-6 my-auto transition" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 2L9 9L16 2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                     </svg>
                     Sea no dico percipitur. Fierent constituam definitiones id eum?
                 </label>
-                <p class="max-h-0 px-20">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos
-                    ius an, in mel diceret persecuti.
+                <p class="max-h-0 pl-20 pr-4 flex justify-between">
+                    <span class="max-w-lg">
+                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
+                        tractatos ius an, in mel diceret persecuti.
+                    </span>
+                    <a class="btn bg-input text-indigo border-0 px-8 my-auto" href="#">Go to documentation</a>
                 </p>
             </div>
             <!-- / FAQ Item -->
@@ -405,7 +415,7 @@
             </p>
 
             <div class="flex justify-center">
-                <a class="btn-dark bg-white border-white text-indigo" href="#">View pricing</a>
+                <a class="btn-dark-blue bg-white border-white text-indigo" href="#">View pricing</a>
                 <a class="btn" href="#">Read documentation</a>
             </div>
         </div>
@@ -423,8 +433,9 @@
             </div>
 
             <form action="#" method="POST">
-                <input class="text-indigo rounded text-xs py-6 pl-6 pr-40 mr-4" type="text" placeholder="Email address">
-                <button class="btn-dark bg-brand border-0 rounded py-5 px-16">Save me</button>
+                <input class="text-indigo bg-input rounded text-xs font-quicksand font-bold py-6 pl-6 pr-40 mr-4"
+                    type="text" placeholder="Email address">
+                <button class="btn-dark-blue bg-brand border-0 rounded py-5 px-16">Save me</button>
             </form>
         </div>
     </section>
